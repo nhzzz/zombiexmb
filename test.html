@@ -1,0 +1,57 @@
+<html>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<style type="text/css">
+	body{
+		padding: 0px;
+		margin: 0px;
+	}
+	.sidebar{
+		width: 220px;
+		height: 100%;
+		min-width: 120px;
+		display: inline-block;
+		margin: 0px;
+		right: -200px;
+		position: fixed;
+	}
+	.sidebar .sidebar-left{
+		width: 20px;
+		height: 100%;
+		display: inline-flex;
+		display: -webkit-inline-flex;
+		flex-flow:column nowrap;
+		justify-content:center;
+		align-items:center;
+		float: left;
+	}
+	.sidebar .sidebar-right{
+		width: 200px;
+		display: inline-block;
+		height: 100%;
+		float: left;
+	}
+	.sidebar .sidebar-pull-button{
+		width: 100%;
+		display: block;
+		height: 100px;
+		flex:0 0 auto;
+		line-height: 25px;
+		text-align: center;
+		overflow: hidden;
+		cursor: pointer;
+	}
+ 
+ 
+ 
+	.btn{
+		background-color: green;
+	}
+	.bk{
+		background-color: red;
+	}
+ 
+	.slideLeft{
+		transform: translate(-200px,0px);
+    	transition-delay: 0s;
+    	transition-timing-function: ease;
+    	transition-duration: 1
