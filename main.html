@@ -4,74 +4,21 @@
 <head>
     <script>
         function alertf() {
-            window.alert("特此声明！因服务器资金问题，暂时选用GitHub挂载官网，网站暂时开源，但代码为CTD原创，未经允许，不得转载或盗用！")
+            window.alert("特此声明！因服务器资金问题，暂时选用GitHub挂载官网，网站暂时开源，但代码为CTD原创，未经允许，不得转载或盗用！若左侧按钮失效，请用QQ号添加管理：2038561772");
         }
-        function tg() {
-            window.alert("详情请加入服务器官方群查看！\nCTD")
+
+        function open29963906() {
+            window.open("29963906.html", "newwindow", "height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        }
+
+        function open56081290() {
+            window.open("56081290.html", "newwindow", "height=100, width=400, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no");
+        }
     </script>
-    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
     <title>CTD官方网站</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
-        /*侧滑栏*/
-	.sidebar{
-		width: 220px;
-		height: 100%;
-		min-width: 120px;
-		display: inline-block;
-		margin: 0px;
-		right: -200px;
-		position: fixed;
-	}
-	.sidebar .sidebar-left{
-		width: 20px;
-		height: 100%;
-		display: inline-flex;
-		display: -webkit-inline-flex;
-		flex-flow:column nowrap;
-		justify-content:center;
-		align-items:center;
-		float: left;
-	}
-	.sidebar .sidebar-right{
-		width: 200px;
-		display: inline-block;
-		height: 100%;
-		float: left;
-	}
-	.sidebar .sidebar-pull-button{
-		width: 100%;
-		display: block;
-		height: 100px;
-		flex:0 0 auto;
-		line-height: 25px;
-		text-align: center;
-		overflow: hidden;
-		cursor: pointer;
-	}
- 
- 
- 
-	.btn{
-		background-color: green;
-	}
-	.bk{
-		background-color: red;
-	}
- 
-	.slideLeft{
-		transform: translate(-200px,0px);
-    	transition-delay: 0s;
-    	transition-timing-function: ease;
-    	transition-duration: 1s;
-    }
-   	.slideRight{
-   		transform: translate(-0px,0px);
-    	transition-delay: 0s;
-    	transition-timing-function: ease;
-    	transition-duration: 1s;
-   	}
         * {
             box-sizing: border-box;
         }
@@ -183,33 +130,12 @@
 </head>
 
 <body>
-	<div class="sidebar">
-		<div class="sidebar-left">
-			<div class="btn sidebar-pull-button">
-				高级搜索
-			</div>
-		</div>
-		<div class="bk sidebar-right">
-		</div>
-	</div>
-	<script type="text/javascript">
-		$('.btn').on('click',function(){
-			if(!$('.sidebar').hasClass('slideLeft'))
-			{
-				$('.sidebar').addClass('slideLeft').removeClass('slideRight');
-			}
-			else
-			{
-				$('.sidebar').removeClass('slideLeft').addClass('slideRight');
-			}
-		});
-	</script>
 
     <div class="header">
         <style type="text/css">
             body {
                 /* background */
-                background-image: url("http://pic.yupoo.com/myctd/a661cfa1/43dbe301.png");
+                background-image: url("http://pic.yupoo.com/myctd/1317bbdd/c61f26bc.png");
                 background-attachment: scorll;
                 background-repeat: no-repeat;
                 background-position: top left;
@@ -222,42 +148,5 @@
 
     <div class="navbar">
         <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&card_type=group&uin=660102165">加入CTD官方QQ群</a>
-        <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=3580513302">添加腐竹QQ</a>
-        <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=2038561772">关注CTD官方抖音账号</a>
-        <a onclick="alertf()">注意事项</a>
-        <!-- <button onclick="alertf()">注意事项</button> -->
-        <a href="#" class="right"> </a>
-    </div>
-
-    <div class="row">
-        <div class="side">
-            <h2>更新日志</h2>
-            <h5>2020.9.20</h5>
-            <video src="http://uvd.yupoo.com/myctd/22321777.mp4" class="fakeimg" controls height="200"></video>
-            <p>更新了主城，村民传送</p>
-            <h3>公告：</h3>
-            <img src="http://pic.yupoo.com/myctd/e53c672d/45104a0b.png" class="fakeimg" height="100" onclick="tg()" />
-            <!-- <div class="fakeimg" style="height:60px;">这边插入图像</div><br>
-            <div class="fakeimg" style="height:60px;">这边插入图像</div> -->
-        </div>
-
-        <div class="main">
-            <h2>CTD论坛</h2>
-            <h5>这里由玩家通过管理员在QQ审核后发布，记录的的游戏精彩瞬间</h5>
-            <div class="fakeimg" style="height:200px;">由玩家发的视频</div>
-            <p>EC_STEVE：</p>
-            <p>在起床战争中灭3队赢得胜利</p>
-            <br>
-            <h2> </h2>
-            <div class="fakeimg" style="height:200px;">图像</div>
-            <p>恶狼嚎：</p>
-            <p>侧搭教学</p>
-        </div>
-    </div>
-
-    <div class="footer">
-        <h4>特此声明！因服务器资金问题，暂时选用GitHub挂载官网，网站暂时开源，但代码为CTD原创，未经允许，不得转载或盗用！</h4>
-    </div>
-</body>
-
-</html>
+        <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=2038561772">加管理QQ</a>
+        <a onclick="alertf()
