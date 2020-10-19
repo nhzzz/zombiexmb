@@ -23,6 +23,17 @@
             window.open("introduce.html");
         }
 
+        function downloads() {
+            var kl = prompt("请输入内测口令：");
+            if (kl == "433859") {
+                alert("当前软件处于测试阶段，任何BUG欢迎在官方QQ群提出，感谢您对CTD团队的支持，密码：ctdkey。点击确定跳转下载。");
+                open("https://vip.d0.baidupan.com/file/?AWdSbA4/ADEGDwszVmNWOlRrAjpfY1c6UjhXf1doUyYCZlUsDTECJgEnC7hRgAejVegPtFSvV7FV7VryBr8BpAGMUisOKQA9BiALe1ZkVj5UYgJiX19XPFIxV2xXOFNjAjNVNQ1oAm4BZwtlUSMHYFV8DzdUOVdsVWBaagZpATkBNlIjDiMAJAZtC29WMlZlVD4CKF8xV2VSeldgVzNTfQIwVWQNMwJjAWALOVFjBzJVNg9pVG5XMVVgWm8GPwE3ATNSNA5iADUGMgs5VmZWZFQ3AmJfM1dsUjRXNVc+UzACLFV4DTkCJgFxCyhRdgdjVX0PY1RvV2hVY1pqBmMBMAE1UjAOYwByBiQLNFZvVjJUaAI6XzFXY1JlV2JXOlNiAjFVNg1lAmcBcQs7UWkHcVUyDztUPVdlVWFabAZoATYBMVIxDmIAcgYlCy1WdVZqVD8CMV8wV2ZSZVdjVz5TZAI2VTENdgIjAT4LLVE4BzdVPg87VCVXYVVlWnIGaAE0ATZSKw5iAGwGYQt7VmZWO1QzAjc=");
+            } else {
+                alert("此测试口令错误或已失效，请联系管理获取。");
+            }
+
+        }
+
         function search() {
             var search = document.getElementById("test").value;
             if (search == "生存" || search == "生存服务器" || search == "生存服" || search == "纯生存" || search == "shengcun" || search == "纯生存服务器" || search == "纯生存服") {
@@ -174,6 +185,7 @@
         <a href="mqqapi://card/show_pslcard?src_type=internal&version=1&uin=2038561772">加管理QQ</a>
         <a onclick="introduce()">申请发布者</a>
         <a onclick="alertf()">注意事项</a>
+        <a onclick="downloads()">下载官方软件</a>
         <!-- <input type="text" placeholder="输入 回车搜索" id="test" autofocus x-webkit-speech onkeydown="if(event.keyCode==13) {search()}"> -->
     </div>
 
